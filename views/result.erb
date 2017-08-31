@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col align-self-center">
+    <h1>決済テスト</h1>
+    <dl>
+      <dt>Transaction.id</dt>
+      <dd><%= result['transaction']['id'] %></dd>
+      <dt>Transaction.location_id</dt>
+      <dd><%= result['transaction']['location_id'] %></dd>
+      <dt>Transaction.created_at</dt>
+      <dd><%= result['transaction']['created_at'] %></dd>
+      <dt>Transaction.tenders[0].id</dt>
+      <dd><%= result['transaction']['tenders'][0]['id'] %></dd>
+      <dt>Transaction.tenders[0].location_id</dt>
+      <dd><%= result['transaction']['tenders'][0]['id'] %></dd>
+      <dt>Transaction.tenders[0].transaction_id</dt>
+      <dd><%= result['transaction']['tenders'][0]['transaction_id'] %></dd>
+      <dt>Transaction.tenders[0].created_at</dt>
+      <dd><%= result['transaction']['tenders'][0]['created_at'] %></dd>
+      <dt>Transaction.tenders[0].note</dt>
+      <dd><%= result['transaction']['tenders'][0]['note'] %></dd>
+      <dt>Transaction.tenders[0].amount_money.amount</dt>
+      <dd><%= result['transaction']['tenders'][0]['amount_money']['amount'] %></dd>
+      <dt>Transaction.tenders[0].amount_money.currency</dt>
+      <dd><%= result['transaction']['tenders'][0]['amount_money']['currency'] %></dd>
+      <dt>Transaction.tenders[0].type</dt>
+      <dd><%= result['transaction']['tenders'][0]['type'] %></dd>
+      <dt>Transaction.tenders[0].card_details.status</dt>
+      <dd><%= result['transaction']['tenders'][0]['card_details']['status'] %></dd>
+      <dt>Transaction.tenders[0].card_details.card.card_brand</dt>
+      <dd><%= result['transaction']['tenders'][0]['card_details']['card']['card_brand'] %></dd>
+      <dt>Transaction.tenders[0].card_details.card.last_4</dt>
+      <dd><%= result['transaction']['tenders'][0]['card_details']['card']['last_4'] %></dd>
+      <dt>Transaction.tenders[0].card_details.card.entry_method</dt>
+      <dd><%= result['transaction']['tenders'][0]['card_details']['card']['entry_method'] %></dd>
+      <dt>Transaction.product</dt>
+      <dd><%= result['transaction']['product'] %></dd>
+    </dl>
+  </div>
+</div>

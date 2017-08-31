@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col align-self-center">
+    <h1>決済テスト</h1>
+    <form action="/" method="post" id="commerceForm">
+      <div class="form-group">
+        <label for="inputName">名前</label>
+        <input type="text" class="form-control" name="name" id="inputName" placeholder="お名前">
+      </div>
+      <div class="form-group">
+        <label for="inputName">住所</label>
+        <input type="text" class="form-control" name="address" id="inputAddress" placeholder="住所">
+      </div>
+      <p>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">
+            <img src="http://via.placeholder.com/200x200" />
+          </div>
+          <div class="col-md-6">
+            <strong>商品名：Squareリーダー</strong>
+            <p>
+              価格：5,000円
+            </p>
+          </div>
+        </div>
+      </p>
+      <input type="hidden" name="nonce">
+      <input type="hidden" name="card_brand">
+      <input type="hidden" name="last_4">
+      <input type="hidden" name="exp_month">
+      <input type="hidden" name="exp_year">
+      <input type="hidden" name="billing_postal_code">
+      <button type="submit" class="btn btn-primary" onclick="requestCardNonce(event)">注文する</button>
+    </form>
+    
+    <label>Card Number</label>
+    <div id="sq-card-number"></div>
+    <label>CVV</label>
+    <div id="sq-cvv"></div>
+    <label>Expiration Date</label>
+    <div id="sq-expiration-date"></div>
+    <label>Postal Code</label>
+    <div id="sq-postal-code"></div>
+</div>
+

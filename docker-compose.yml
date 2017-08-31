@@ -1,0 +1,8 @@
+web:
+  volumes:
+    - .:/usr/src/app
+  environment:
+    - MAIN_APP_FILE=app.rb
+  ports:
+   - "8080:80"
+  image: erikap/ruby-sinatra
